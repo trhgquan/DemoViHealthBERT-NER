@@ -4,6 +4,11 @@ This is a demo repository for Text Mining (MTH089) @ VNUHCM - University of Scie
 
 Shout out to [**Pham Anh Viet**](https://github.com/AnhVietPham), **Nguyen Thien Duong** and **Nguyen Duc Thuan** for their great contributon on this project.
 
+## Paper
+Based on the paper **ViHealthBERT: Pre-trained Language Models for Vietnamese in Health Text Mining**[^1], we fine-tuned the ViHealthBERT model to create a Disease Symptoms Filter application. 
+
+[^1]: [ViHealthBERT: Pre-trained Language Models for Vietnamese in Health Text Mining](https://aclanthology.org/2022.lrec-1.35) (Minh et al., LREC 2022)
+
 ## Setup
 
 ### 1. Install Java
@@ -13,7 +18,7 @@ Follow the guidelines in https://gist.github.com/wavezhang/ba8425f24a968ec9b2a86
 
 ### 2. Install VnCoreNLP
 Run `vncorenlp.sh` to download the VnCoreNLP pretrained, 
-    - Or, follow the guidelines in https://github.com/vncorenlp/VnCoreNLP
+- Or, follow the guidelines in https://github.com/vncorenlp/VnCoreNLP
 
 ### 3. Install other packages
 ```
