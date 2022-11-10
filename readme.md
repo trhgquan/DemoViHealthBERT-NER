@@ -12,12 +12,12 @@ Based on the paper **ViHealthBERT: Pre-trained Language Models for Vietnamese in
 ## Setup
 
 ### 1. Install Java
-Follow the guidelines in https://gist.github.com/wavezhang/ba8425f24a968ec9b2a8619d7c2d86a6 to **download Java without an Orcle account**.
+Follow the guidelines in https://gist.github.com/wavezhang/ba8425f24a968ec9b2a8619d7c2d86a6 to **download Java without an Oracle account**.
 - JDK / JRE version required: **at least 1.8**
 - [**Remember to add Java runtime to your system variable - Windows only!**](https://stackoverflow.com/questions/3518172/how-do-i-set-the-path-environment-variable-to-point-to-jre-version-1-5)
 
 ### 2. Install VnCoreNLP
-Run `vncorenlp.sh` to download the VnCoreNLP pretrained, 
+Run `vncorenlp.sh` to download the pretrained VnCoreNLP, 
 - Or, follow the guidelines in https://github.com/vncorenlp/VnCoreNLP
 
 ### 3. Install other packages
