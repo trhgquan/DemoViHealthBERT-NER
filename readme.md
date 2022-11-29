@@ -1,13 +1,14 @@
-# Demo VnHealthBERT
+# Demo ViHealthBERT for NER task
 
 This is a demo repository for Text Mining (MTH089) @ VNUHCM - University of Science, Winter 2022.
 
 Shout out to [**Pham Anh Viet**](https://github.com/AnhVietPham), **Nguyen Thien Duong** and **Nguyen Duc Thuan** for their great contributon on this project.
 
 ## Abstract
-Based on the paper **ViHealthBERT: Pre-trained Language Models for Vietnamese in Health Text Mining**[^1], we fine-tuned the ViHealthBERT model to create a Disease Symptoms Filter application. 
+Based on the paper **ViHealthBERT: Pre-trained Language Models for Vietnamese in Health Text Mining**[^1], we fine-tuned the ViHealthBERT model for the NER task using the PhoNER_COVID19 dataset[^2]. 
 
 [^1]: [ViHealthBERT: Pre-trained Language Models for Vietnamese in Health Text Mining](https://aclanthology.org/2022.lrec-1.35) (Minh et al., LREC 2022)
+[^2]: [COVID-19 Named Entity Recognition for Vietnamese](https://aclanthology.org/2021.naacl-main.173) (Truong et al., NAACL 2021)
 
 ## Setup
 
@@ -25,11 +26,11 @@ Run `vncorenlp.sh` to download the pretrained VnCoreNLP,
 pip install -r requirements.txt
 ```
 
-### 4. Download the fine-tuned ViHealthBERT pretrain
+### 4. Download the fine-tuned ViHealthBERT-NER pretrain
 Follow [this link](https://drive.google.com/drive/folders/1jsvgoUtTlnFSAAp_xagUDnp27T183Cal?fbclid=IwAR1ntjPEa3Fx5xKF4WbGMumvAVRyyedO_1eHEIHsZYhAEL91bkWyIKCpsB8). The directory tree after this step should looks something like this:
 
 ```
-DemoVnHealthBERT
+DemoViHealthBERT-NER
 |   .gitignore
 |   main.py
 |   readme.md
