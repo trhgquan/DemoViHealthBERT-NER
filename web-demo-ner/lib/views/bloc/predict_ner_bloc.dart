@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:demoner/views/bloc/predict_ner_event.dart';
-import 'package:demoner/views/bloc/predict_ner_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:web_demo_ner/views/bloc/predict_ner_event.dart';
+import 'package:web_demo_ner/views/bloc/predict_ner_state.dart';
 
 import '../../base/error/failures.dart';
 import '../../domain/predict_ner_use_case.dart';

@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:demoner/domain/result_ner_entity.dart';
+import 'package:web_demo_ner/domain/result_ner_entity.dart';
 
 import '../base/error/failures.dart';
 

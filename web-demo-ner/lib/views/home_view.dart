@@ -1,12 +1,12 @@
 import 'dart:io';
 
-import 'package:demoner/utils/color_utils.dart';
-import 'package:demoner/views/bloc/predict_ner_event.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../injection_container.dart';
+import '../utils/color_utils.dart';
 import 'bloc/predict_ner_bloc.dart';
+import 'bloc/predict_ner_event.dart';
 import 'bloc/predict_ner_state.dart';
 
 class HomeView extends StatefulWidget {

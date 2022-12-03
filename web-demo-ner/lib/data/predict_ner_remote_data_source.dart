@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:demoner/data/predict_ner_response.dart';
 import 'package:http/http.dart' as http;
+import 'package:web_demo_ner/data/predict_ner_response.dart';
 
 abstract class PredictNerRemoteDataSource {
   Future<PredictNerResponse> predictNer(String text);

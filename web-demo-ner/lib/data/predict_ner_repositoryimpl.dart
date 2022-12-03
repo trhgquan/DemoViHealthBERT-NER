@@ -1,11 +1,10 @@
 import 'package:dartz/dartz.dart';
-import 'package:demoner/data/predict_ner_remote_data_source.dart';
-import 'package:demoner/data/predict_ner_response.dart';
-import 'package:demoner/domain/predict_ner_repository.dart';
-import 'package:demoner/domain/result_ner_entity.dart';
+import 'package:web_demo_ner/data/predict_ner_remote_data_source.dart';
+import 'package:web_demo_ner/data/predict_ner_response.dart';
 
 import '../base/error/exceptions.dart';
 import '../base/error/failures.dart';
+import '../domain/predict_ner_repository.dart';
 import '../domain/result_ner_entity.dart';
 
 class PredictNerRepositoryImpl extends  PredictNerRepository {

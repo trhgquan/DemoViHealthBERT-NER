@@ -1,5 +1,5 @@
-import 'package:demoner/views/bloc/predict_ner_bloc.dart';
 import 'package:get_it/get_it.dart';
+import 'package:web_demo_ner/views/bloc/predict_ner_bloc.dart';
 
 import 'data/predict_ner_remote_data_source.dart';
 import 'data/predict_ner_repositoryimpl.dart';

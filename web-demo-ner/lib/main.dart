@@ -1,6 +1,6 @@
-import 'package:demoner/views/bloc/predict_ner_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:web_demo_ner/views/bloc/predict_ner_bloc.dart';
 import 'injection_container.dart' as DI;
 import 'views/animated_splash_view.dart';
 import 'views/home_view.dart';
