@@ -31,10 +31,9 @@ def retrieve_symptoms(words, labels):
 
     for i in range(len(words)):
         if labels[i] == "B-SYMPTOM_AND_DISEASE":
+            current_label = [words[i]]
             if len(current_label) > 0:
                 list_symptoms.append(" ".join(current_label).replace("_", " "))
-
-            current_label = [words[i]]
 
         if labels[i] == "I-SYMPTOM_AND_DISEASE":
             current_label.append(words[i])

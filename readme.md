@@ -33,10 +33,13 @@ Follow [this link](https://drive.google.com/drive/folders/1jsvgoUtTlnFSAAp_xagUD
 DemoViHealthBERT-NER
 |   .gitignore
 |   main.py
+|   data_loader.py
 |   readme.md
 |   requirements.txt
 |   vncorenlp.sh
-|
++---model
+|       module.py
+|       vihnbert.py
 +---model-save
 |       config.json
 |       eval_dev_results.txt
