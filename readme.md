@@ -4,13 +4,15 @@ This is a demo repository for Text Mining (MTH089) @ VNUHCM - University of Scie
 
 Shout out to [**Pham Anh Viet**](https://github.com/AnhVietPham), **Nguyen Thien Duong** and **Nguyen Duc Thuan** for their great contributon on this project.
 
-## Abstract
+# Abstract
 Based on the paper **ViHealthBERT: Pre-trained Language Models for Vietnamese in Health Text Mining**[^1], we fine-tuned the ViHealthBERT model for the NER task using the PhoNER_COVID19 dataset[^2]. 
 
 [^1]: [ViHealthBERT: Pre-trained Language Models for Vietnamese in Health Text Mining](https://aclanthology.org/2022.lrec-1.35) (Minh et al., LREC 2022)
 [^2]: [COVID-19 Named Entity Recognition for Vietnamese](https://aclanthology.org/2021.naacl-main.173) (Truong et al., NAACL 2021)
 
-## Setup
+# Setup
+
+## For the server
 
 ### 1. Install Java
 Follow the guidelines in https://gist.github.com/wavezhang/ba8425f24a968ec9b2a8619d7c2d86a6 to **download Java without an Oracle account**.
@@ -27,7 +29,7 @@ pip install -r requirements.txt
 ```
 
 ### 4. Download the fine-tuned ViHealthBERT-NER pretrain
-Follow [this link](https://drive.google.com/drive/folders/1jsvgoUtTlnFSAAp_xagUDnp27T183Cal?fbclid=IwAR1ntjPEa3Fx5xKF4WbGMumvAVRyyedO_1eHEIHsZYhAEL91bkWyIKCpsB8). The directory tree after this step should looks something like this:
+Follow [this link](https://drive.google.com/drive/u/0/folders/19AGLo-27EeuXDkKG2JstuCgrcwB0854r). The directory tree after this step should looks something like this:
 
 ```
 DemoViHealthBERT-NER
@@ -42,11 +44,10 @@ DemoViHealthBERT-NER
 |       vihnbert.py
 +---model-save
 |       config.json
-|       eval_dev_results.txt
-|       eval_test_results.txt
-|       events.out.tfevents.1667922466.cb80415698cc.105.1
 |       pytorch_model.bin
 |       training_args.bin
+|
++---web-demo-ner
 |
 \---vncorenlp
     |   VnCoreNLP-1.1.1.jar
@@ -58,4 +59,32 @@ DemoViHealthBERT-NER
 ```
 
 
-Everything should be fine after this section.
+Everything should be fine after this section. Now run and **remember the server's url**.
+```
+python main.py
+```
+The server's url can be found on the terminal:
+```
+Running on http://ipaddress:port (Press Ctrl+C to quit)
+```
+
+## For the web application
+### 1. Install Flutter SDK
+https://docs.flutter.dev/get-started/install
+
+### 2. Configure API server address
+- Open `web-demo-ner/lib/data/predict_ner_remote_data_source.dart`
+- Update `serverUrl` to the `http://ipaddress:port` above.
+
+### 3. Running the Web
+- List out all available devices:
+    ```
+    flutter devices
+    ```
+- Using one of the devices above (e.g. `edge`):
+    ```
+    cd web-demo-ner
+    flutter run -d edge
+    ```
+
+The web should start after a while. 
