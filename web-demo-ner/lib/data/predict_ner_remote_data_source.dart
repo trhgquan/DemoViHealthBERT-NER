@@ -10,7 +10,8 @@ abstract class PredictNerRemoteDataSource {
 class PredictNerRemoteDataSourceImpl extends PredictNerRemoteDataSource {
   @override
   Future<PredictNerResponse> predictNer(String text) async {
-    final url = 'http://192.168.1.3:9999/api/predict';
+    const serverUrl = "http://192.168.1.213:9999";
+    const url = "$serverUrl/api/predict";
     var param = {"text": text};
     final headers = {'Content-Type': 'application/json'};
     final dataRequest = await http.post(Uri.parse(url),
